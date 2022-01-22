@@ -1,0 +1,234 @@
+body{
+background-color:#ccc;
+   margin:0;
+   padding:0;
+   height:100%;
+   font-family: "georgia", Times, serif;
+
+}
+body h1{
+	margin-top:100px;
+  font-family: "georgia", Times, serif;
+  color:#ff4b38;
+  text-align: center;
+}
+/*Barra de Menu*/
+.menu{
+position: absolute;
+top: 0px; 
+	left:0;
+	width:60px;
+	height:50px;
+	background:#fff;
+	cursor:pointer;
+	box-sizing:border-box;
+	border-right:1px solid rgba(0,0,0,.1);	
+z-index:2;
+}
+.menu span{
+	position:absolute;
+	width:30px;
+	height:2px;
+	background:#ff4b38;
+	display:block;
+	top:calc(50% - 1px);
+	left:calc(50% - 15px);
+	transition:0.2%:
+}
+.menu span:nth-child(1){
+	transform:translateY(-10px);
+}
+.menu span:nth-child(3){
+	transform:translateY(10px);
+}
+.menu.active span:nth-child(2){
+	opacity:0;
+}
+.menu-bar{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	background:#fff;
+	cursor:pointer;
+	box-sizing:border-box; 
+	transition:0.5s;
+	transform:translateX(-100%);
+}
+.menu-bar ul{
+	display:flex;
+	margin:0;
+	padding:0;
+	float:right;
+}
+.menu-bar ul li{
+	list-style:none;
+}
+.menu-bar ul li a{
+	line-height:50px;
+	font-family: "georgia", Times, serif;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#ff4b38;
+	text-decoration:none;
+	padding:0 15px;
+	display:block;
+	border-right:1px solid rgba(0,0,0,.1);
+}
+.menu-bar.active{
+	transform:translateX(0%);
+}
+.menu-bar ul li:last-child a{
+	border-right:none;
+}
+.menu-bar ul li a:hover{
+	background:#ff4b38;
+	color:#fff;	
+}
+@media screen and (max-width:600px){
+    .menu-bar{
+	height:auto;
+	}
+	.menu-bar ul {
+	display:inherit;
+	float:none;
+	text-align:center;
+	width:100%;
+	height:100vh;
+	}
+	.menu-bar ul a{
+	border-right:none;	
+	border-bottom:1px solid rgba(0,0,0,.1);
+	}
+	.content{
+	z-index:0;	
+	}
+}
+/*Tela de Registro*/
+.telaregistro h2{
+	margin-top:0px;
+  font-family: "georgia", Times, serif;
+  color:#ff4b38;
+  text-align: center;
+}
+.formreg{
+   font-family: "georgia", Times, serif;
+  z-index: 1;
+  background: #f2f2f2;
+  max-width: 360px;
+  margin: 0 auto 80px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.formreg input {
+  font-family: "georgia", Times, serif;
+  outline: 0;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+    color:#000;
+}
+.formreg button {
+	font-family: "georgia", Times, serif;
+  text-transform: uppercase;
+  outline: 0;
+    background:#ff4b38;
+  width: 75%;
+  border: 0;
+  padding: 12px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.formreg button:hover{
+opacity:0.8;
+}
+
+/*Tela de Login*/
+.telalogin h2{
+  margin-top:0px;
+  font-family: "georgia", Times, serif;
+  color:#ff4b38;
+  text-align: center;
+}
+.formlogin{
+  font-family: "georgia", Times, serif;
+  z-index: 1;
+  background: #f2f2f2;
+  max-width: 360px;
+  margin: 0 auto 80px;
+  padding: 50px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.formlogin input {
+  font-family: "georgia", Times, serif;
+  outline: 0;
+  background: #fff;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+    color:#000;
+}
+.formlogin button {
+	font-family: "georgia", Times, serif;
+  outline: 0;
+    background:#ff4b38;
+  width: 75%;
+  border: 0;
+  padding: 12px;
+  color: #FFFFFF;
+  font-size: 14px;
+  cursor: pointer;
+}
+.formlogin button:hover{
+opacity:0.8;
+}
+.formlogin .message {
+  margin: 15px 0 0;
+  color: #808080;
+  font-size: 12px;
+}
+.formlogin .message a {
+  color:#ff4b38;
+  text-decoration: none;
+}
+/*Footer*/
+#footer_bottom {
+font-family: "georgia", Times, serif;
+background-color:#242526;
+padding-top: 13px;
+padding-bottom: 17px;
+width:100%;
+text-align: center;
+color:#ff4b38;
+    position: fixed;
+    bottom:0;
+    left:0;
+}
+#footer_bottom .copyright {
+text-align: center;
+font-size: 16px;
+color:#ff4b38;
+}
+#footer_bottom .container a{
+	color:  inherit;
+}
+#footer{
+ bottom:0;
+ width: auto;
+ background-color: #000;
+ height:auto;
+ color: #fff;
+ padding: 30px;
+}
+	
