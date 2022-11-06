@@ -68,3 +68,8 @@ Acknowledgement
 
 The CodeIgniter team would like to thank EllisLab, all the
 contributors to the CodeIgniter project and you, the CodeIgniter user.
+
+###################
+Quick Notes
+###################
+In order to work properly, you need to change the name of the project to library.
